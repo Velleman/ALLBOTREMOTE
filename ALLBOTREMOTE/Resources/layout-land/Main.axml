@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MainLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="1.0"
+    android:background="@drawable/background">
+    <allbot.RoboTextView
+        android:text="ALLBOT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:id="@+id/txtTitle"
+        android:gravity="center"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:id="@+id/linNames"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="10">
+        <allbot.RoboTextView
+            android:text="Action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtAction"
+            android:gravity="center"
+            android:layout_column="0"
+            android:layout_weight="4" />
+        <allbot.RoboTextView
+            android:text="Preset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtPreset"
+            android:gravity="center"
+            android:layout_column="1"
+            android:layout_weight="3" />
+        <allbot.RoboTextView
+            android:text="Speed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtSpeed"
+            android:gravity="center"
+            android:layout_column="2"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linControls"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:weightSum="10"
+        android:padding="10dp">
+        <allbot.DPad
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/dpad"
+            android:layout_weight="4" />
+        <allbot.PresetsLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/Presets"
+            custom:Presets="6"
+            custom:Columns="2" />
+        <LinearLayout
+            android:id="@+id/SeekBarLayoutHelper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <allbot.CustomSeekBar
+                android:id="@+id/seekBar1"
+                android:max="250"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="1000dp"
+                android:maxHeight="1000dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linVersion"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|bottom"
+        android:layout_weight="0.05">
+        <allbot.RoboTextView
+            android:text="screen size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textscreensize"
+            android:gravity="center_horizontal|bottom" />
+        <allbot.RoboTextView
+            android:text="Version "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textVersion"
+            android:textColor="#31DB3C"
+            android:gravity="center_horizontal|bottom" />
+        <allbot.RoboTextView
+            android:text="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textVersionNumber"
+            android:gravity="center_horizontal|bottom" />
+    </LinearLayout>
+</LinearLayout>

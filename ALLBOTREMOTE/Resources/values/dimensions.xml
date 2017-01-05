@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="PresetFontSize">30sp</dimen>
+  <dimen name="SeekBarWidth">175dp</dimen>
+  <dimen name="SeekBarHeight">200dp</dimen>
+</resources>
