@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<resources>
-  <!-- Inherit from the light Material Theme -->
-  <style name="MyCustomTheme" parent="android:Theme.Holo">
-    <item name="android:windowActionBar">false</item>
-    <item name="android:windowNoTitle">true</item>
-  </style>
-</resources>
