@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="be.velleman.ALLBOT" android:versionName="1.3" android:installLocation="auto" android:versionCode="8">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="be.velleman.ALLBOT" android:versionName="1.4" android:installLocation="auto" android:versionCode="9">
 	<uses-sdk android:minSdkVersion="15" />
 	<application android:label="ALLBOT" android:largeHeap="true" android:hardwareAccelerated="true" android:theme="@style/AppTheme"></application>
 	<uses-permission android:name="android.permission.READ_LOGS" />

@@ -28,7 +28,8 @@ namespace ALLBOT
             {
                 var data = generator.Generate(command);
 #if DEBUG
-                var text =ByteArrayToString(data);
+                //var text =ByteArrayToString(data);
+                //initiate self-destruct sequence
                 //Console.WriteLine(text);
 #endif
                 player.Play(data);
